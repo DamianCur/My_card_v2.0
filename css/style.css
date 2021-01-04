@@ -64,7 +64,7 @@ header img {
     position: absolute;
     height: 50%;
     bottom: 0;
-    right: 0;
+    right: -7%;
 }
 
 @media(orientation: landscape) {
@@ -72,15 +72,46 @@ header img {
         height: 80%;
         bottom: 0;
         right: -5%;
-        
     }
     header .welcome {
         top: 15%;
         left: 3%;
-        right: 43%;        
+        right: 43%;
     }
-
     header button {
         margin-top: 20px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header img {
+        height: 50%;
+        bottom: 0;
+        right: -7%;
+    }
+    header h1 {
+        font-size: 23px;
+    }
+    header h2 {
+        font-size: 23px;
+    }
+    header button {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header .welcome {
+        top: 22%;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    header h2 {
+        font-size: 28px;
+    }
+    header button {
+        font-size: 20px;
     }
 }
