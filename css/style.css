@@ -6,3 +6,81 @@ font-family: 'Saira Condensed', sans-serif; */
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    position: relative;
+    background-color: #29a6dc;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+header .welcome {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    right: 5%;
+}
+
+header p {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+header h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+header button {
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border: 2px solid white;
+}
+
+header img {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+@media(orientation: landscape) {
+    header img {
+        height: 80%;
+        bottom: 0;
+        right: -5%;
+        
+    }
+    header .welcome {
+        top: 15%;
+        left: 3%;
+        right: 43%;        
+    }
+
+    header button {
+        margin-top: 20px;
+    }
+}
