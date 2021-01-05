@@ -13,6 +13,8 @@ header {
     height: 100vh;
     text-align: center;
     overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 header .welcome {
@@ -66,117 +68,6 @@ header img {
     height: 50%;
     bottom: 0;
     right: -7%;
-}
-
-@media(orientation: landscape) {
-    header img {
-        height: 80%;
-        bottom: 0;
-        right: -5%;
-    }
-    header .welcome {
-        top: 15%;
-        left: 3%;
-        right: 43%;
-    }
-    header button {
-        margin-top: 20px;
-    }
-}
-
-@media (orientation: landscape) and (min-width: 640px) {
-    header .welcome {
-        top: 16%;
-    }
-header p {
-    font-size: 40px;
-}
-
-    header h1 {
-        font-size: 20px;
-    }
-    header h2 {
-        font-size: 20px;
-    }
-    header button {
-        font-size: 15px;
-    }
-    header img {
-        height: 90%;
-        right: -10%;
-    }
-}
-
-@media (orientation: landscape) and (min-width: 768px) {
-    header p {
-        font-size: 80px;
-        margin-bottom: 40px;
-    }
-    header h1 {
-        font-size: 45px;
-    }
-    header h2 {
-        font-size: 45px;
-    }
-    header button {
-        font-size: 30px;
-        padding: 10px 30px;
-        margin-top: 40px;
-    }
-    header img {
-        right: -18%;
-    }
-}
-
-@media (orientation: landscape) and (min-width: 812px) {
-    header p {
-        font-size: 50px;
-        margin-bottom: 20px;
-    }
-    header h1 {
-        font-size: 25px;
-    }
-    header h2 {
-        font-size: 25px;
-    }
-    header button {
-        font-size: 20px;
-        padding: 5px 15px;
-        margin-top: 20px;
-    }
-    header img {
-        right: 0%;
-    }
-}
-
-@media (orientation: landscape) and (min-width: 1024px) {
-
-    header .welcome {
-        top: 25%;
-    }
-    
-    header p {
-        font-size: 80px;
-    }
-    header h1 {
-        font-size: 45px;
-    }
-
-    header h2 {
-        font-size: 45px;
-    }
-
-    header button {
-        font-size: 30px;
-        padding: 10px 25px;
-        margin-top: 50px;
-    }
-
-    header img {
-        
-        right: -22%;
-        height: 85%;
-    }
 }
 
 @media (orientation: portrait) and (min-width: 360px) {
@@ -264,5 +155,175 @@ header p {
     }
     header img {
         right: 2%;
+    }
+}
+
+@media(orientation: landscape) {
+    header img {
+        height: 80%;
+        bottom: 0;
+        right: -5%;
+    }
+    header .welcome {
+        top: 15%;
+        left: 3%;
+        right: 43%;
+    }
+    header button {
+        margin-top: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header .welcome {
+        top: 16%;
+    }
+    header p {
+        font-size: 40px;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    header button {
+        font-size: 15px;
+    }
+    header img {
+        height: 90%;
+        right: -10%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+    header p {
+        font-size: 80px;
+        margin-bottom: 40px;
+    }
+    header h1 {
+        font-size: 45px;
+    }
+    header h2 {
+        font-size: 45px;
+    }
+    header button {
+        font-size: 30px;
+        padding: 10px 30px;
+        margin-top: 40px;
+    }
+    header img {
+        right: -18%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 812px) {
+    header p {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    header h1 {
+        font-size: 25px;
+    }
+    header h2 {
+        font-size: 25px;
+    }
+    header button {
+        font-size: 20px;
+        padding: 5px 15px;
+        margin-top: 20px;
+    }
+    header img {
+        right: 0%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header .welcome {
+        top: 30%;
+        left: 5%;
+        text-align: left;
+    }
+    header p {
+        font-size: 70px;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+    header h2 {
+        font-size: 35px;
+    }
+    header button {
+        font-size: 25px;
+        padding: 10px 25px;
+        margin-top: 50px;
+    }
+    header img {
+        right: -22%;
+        height: 75%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    header .welcome {
+        top: 16%;
+        text-align: left;
+        left: 10%;
+    }
+    header p {
+        font-size: 85px;
+    }
+    header h1 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    header h2 {
+        font-size: 40px;
+    }
+    header img {
+        height: 95%;
+        right: -9%;
+    }
+    header button {
+        font-size: 25px;
+        margin-top: 30px;
+        padding: 20px 30px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    header .welcome {
+        left: 5%;
+    }
+    header p {
+        font-size: 120px;
+    }
+    header h1 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    header h2 {
+        font-size: 60px;
+    }
+    header img {
+        height: 95%;
+        right: -9%;
+    }
+    header button {
+        font-size: 36px;
+        margin-top: 30px;
+        padding: 30px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header button {
+        transition: 0.3s;
+    }
+    header button:hover {
+        background-color: white;
+        color: #111111;
+        border: 2px solid black;
+        cursor: pointer;
     }
 }
