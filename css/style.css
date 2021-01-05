@@ -16,6 +16,7 @@ header {
 }
 
 header .welcome {
+    z-index: 1;
     position: absolute;
     top: 7%;
     left: 5%;
@@ -85,23 +86,28 @@ header img {
 
 @media (orientation: landscape) and (min-width: 640px) {
     header .welcome {
-        top: 22%;
+        top: 16%;
     }
+header p {
+    font-size: 40px;
+}
+
     header h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
     header h2 {
-        font-size: 28px;
+        font-size: 20px;
     }
     header button {
-        font-size: 20px;
+        font-size: 15px;
+    }
+    header img {
+        height: 90%;
+        right: -10%;
     }
 }
 
 @media (orientation: landscape) and (min-width: 768px) {
-    
-    
-
     header p {
         font-size: 80px;
         margin-bottom: 40px;
@@ -122,10 +128,7 @@ header img {
     }
 }
 
-@media (orientation: landscape) and (min-width: 823px) {
-    
-    
-
+@media (orientation: landscape) and (min-width: 812px) {
     header p {
         font-size: 50px;
         margin-bottom: 20px;
@@ -143,6 +146,36 @@ header img {
     }
     header img {
         right: 0%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+    header .welcome {
+        top: 25%;
+    }
+    
+    header p {
+        font-size: 80px;
+    }
+    header h1 {
+        font-size: 45px;
+    }
+
+    header h2 {
+        font-size: 45px;
+    }
+
+    header button {
+        font-size: 30px;
+        padding: 10px 25px;
+        margin-top: 50px;
+    }
+
+    header img {
+        
+        right: -22%;
+        height: 85%;
     }
 }
 
@@ -166,20 +199,21 @@ header img {
 
 @media (orientation: portrait) and (min-width: 375px) {
     header p {
-        font-size: 50px;
+        font-size: 40px;
     }
     header h1 {
-        font-size: 38px;
+        font-size: 28px;
     }
     header h2 {
         font-size: 28px;
     }
     header button {
-        font-size: 21px;
+        font-size: 18px;
         padding: 5px 20px;
     }
     header img {
-        right: 10%;
+        right: -10%;
+        height: 48%;
     }
 }
 
@@ -205,7 +239,11 @@ header img {
     }
 }
 
-
+@media (orientation: portrait) and (min-width: 540px) {
+    header img {
+        right: 10%;
+    }
+}
 
 @media (orientation: portrait) and (min-width: 768px) {
     header .welcome {
