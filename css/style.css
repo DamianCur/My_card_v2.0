@@ -288,7 +288,7 @@ header img {
     }
     header img {
         height: 95%;
-        right: -9%;
+        right: -20%;
     }
     header button {
         font-size: 25px;
@@ -518,6 +518,15 @@ header img {
     .project:nth-of-type(even) .about h2 {
         text-indent: 0;
         margin-left: 40px;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 812px) {
+
+    .portfolio .about p {
+        font-size: 17px;
+        padding-left: 40px;
+        line-height: 110%;
     }
 }
 
