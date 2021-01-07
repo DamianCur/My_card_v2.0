@@ -618,11 +618,12 @@ header img {
 
 @media (min-width: 1600px) {
     .slogan h1 {
-        font-size: 80px;
-        margin-bottom: 90px;
+        font-size: 60px;
+        margin-bottom: 300px;
+        margin-top: 200px;
     }
     .slogan p {
-        font-size: 40px;
+        font-size: 48px;
         margin-bottom: 60px;
         letter-spacing: 1px;
         width: 70%;
@@ -630,9 +631,122 @@ header img {
         margin-right: auto;
     }
     .slogan p.author {
-        font-size: 25px;
+        font-size: 24px;
+        margin-bottom: 200px;
     }
     .slogan .bg {
         padding: 100px 30px 60px 30px;
     }
 }
+
+/*sekcja hobby*/
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    position: relative;
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../images/hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../images/hobby4.jpg);
+}
+
+.hobby .item p {
+    position: absolute;
+    width: 100%;
+    font-family: 'Saira', sans-serif;
+    color: white;
+    text-align: center;
+    /* line-height: 25vh; */
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    padding: 5px 0;
+    top: 154px;
+}
+
+.hobby h1 {
+    padding: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .hobby h1 {
+        padding: 30px;
+        font-size: 36px;
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby .item p {
+        padding: 0;
+        line-height: 40vh;
+        position: static;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .hobby .item {
+        background-size: 120%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 160%;
+        
+        
+    }
+}
+
+@media (min-width: 1600px) {
+    .hobby h1 {
+        padding: 50px;
+        font-size: 60px;
+    }
+
+    .hobby .item p {
+        font-size: 40px;
+        
+    }
+}
+
