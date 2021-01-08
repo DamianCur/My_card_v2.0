@@ -842,11 +842,14 @@ header img {
     padding-left: 10px;
 }
 
-.contact .social span {
+.contact .social span a {
     line-height: 72px;
     padding-left: 20px;
     float: left;
     font-size: 17px;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
 }
 
 @media (min-width: 533px) {
@@ -907,6 +910,11 @@ header img {
         background-color: white;
         color: black;
         cursor: pointer;
+    }
+
+    .contact .social span a:hover {
+        font-weight: bold;
+        font-size: 20px;
     }
 }
 
